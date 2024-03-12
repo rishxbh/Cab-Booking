@@ -17,4 +17,7 @@ public class UserRepository {
     public List<User> findAll() {
         return new ArrayList<>(userList.values());
     }
+    public boolean checkIfExist(String userName) {
+        return userList.containsKey(userName);
+    }
 }

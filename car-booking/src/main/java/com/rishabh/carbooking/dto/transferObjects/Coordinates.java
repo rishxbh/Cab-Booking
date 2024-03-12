@@ -1,4 +1,4 @@
-package com.rishabh.carbooking.model;
+package com.rishabh.carbooking.dto.transferObjects;
 
 import lombok.Data;
 

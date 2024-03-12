@@ -1,7 +1,6 @@
 package com.rishabh.carbooking.repository;
 
-import com.rishabh.carbooking.dto.requests.BookingRequest;
-import com.rishabh.carbooking.model.Coordinates;
+import com.rishabh.carbooking.dto.transferObjects.Coordinates;
 import com.rishabh.carbooking.model.Driver;
 import com.rishabh.carbooking.model.DriverDetails;
 import org.springframework.stereotype.Repository;
@@ -59,5 +58,12 @@ public class DriverRepository {
             }
         }
         return null;
+    }
+
+    public boolean driverDetailsToDriver(DriverDetails driverDetails) {
+        for(Driver driver : driverList) {
+            if(driver.getDriverDetails().toString().equals(driverDetails.toString())) return true;
+        }
+        return false;
     }
 }

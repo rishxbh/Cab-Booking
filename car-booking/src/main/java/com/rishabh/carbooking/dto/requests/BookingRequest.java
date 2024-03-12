@@ -1,6 +1,6 @@
 package com.rishabh.carbooking.dto.requests;
 
-import com.rishabh.carbooking.model.Coordinates;
+import com.rishabh.carbooking.dto.transferObjects.Coordinates;
 import lombok.Data;
 
 @Data

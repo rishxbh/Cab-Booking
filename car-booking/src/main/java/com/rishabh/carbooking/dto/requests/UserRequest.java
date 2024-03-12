@@ -1,6 +1,6 @@
 package com.rishabh.carbooking.dto.requests;
 
-import com.rishabh.carbooking.model.Gender;
+import com.rishabh.carbooking.dto.transferObjects.Gender;
 import lombok.Data;
 
 @Data
